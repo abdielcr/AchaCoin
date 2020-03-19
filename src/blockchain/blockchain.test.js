@@ -42,7 +42,7 @@ describe('Blockchain', () => {
       blockchain.replace(blockchainB.blocks);
     }).toThrowError('Received chain is not longer than current chain.');
   });
-
+// No remplazar la cadena cuando no es valido
   it('not replace the chain with one is not valid', () => {
     blockchainB.addBlock('block-1');
     blockchainB.blocks[1].data = 'block-h4ck';
