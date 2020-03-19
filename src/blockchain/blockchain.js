@@ -1,11 +1,13 @@
 import Block from './block';
 import validate from './validate';
+import MemoryPool from './memoryPool';
 
 class Blockchain {
     //Constructir no recibe ningun parametro 
   constructor() {
     // Array de bloques ordenados  
     this.blocks = [Block.genesis];
+    this.memoryPool = new MemoryPool();
   }
     // Nuevo metodo de instancia, solo recibe un parametro que es data
   addBlock(data) {

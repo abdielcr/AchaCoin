@@ -1,4 +1,5 @@
-import uuidV1 from 'uuid/v1';
+//import uuidV1 from 'uuid/v1';
+import { v4 as uuidV1 } from 'uuid';
 import { elliptic } from '../modules';
 
 class Transaction {
