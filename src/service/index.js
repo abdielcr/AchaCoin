@@ -12,7 +12,7 @@ const blockchain = new Blockchain();
 const p2pService = new P2PService(blockchain);
 
 // Generando un nuevo bloque
-blockchain.addBlock('express')
+//blockchain.addBlock('express')
 
 // Midlewhere
 app.use(bodyParser.json());
