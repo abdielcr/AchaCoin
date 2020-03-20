@@ -1,5 +1,7 @@
 import Transaction from './transaction';
 import Wallet from './wallet';
 
-export { Transaction };
+const blockchainWallet = new Wallet();//A qui podemos definir el numero tope
+
+export { Transaction, blockchainWallet };
 export default Wallet;
